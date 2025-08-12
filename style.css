@@ -1,0 +1,165 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: white;
+    }
+    header {
+      background: #fff;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    nav {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    nav a {
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .banner {
+      background-image: url("https://www.shutterstock.com/image-photo/illuminated-soccer-field-goalpost-night-600nw-2587304517.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .banner-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+    .banner h1 {
+      font-size: 36px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .carousel {
+      position: relative;
+      width: 1000px;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .slider {
+      display: none;
+      width: 100%;
+      border-radius: 10px;
+      border: none;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    }
+    .slider.on {
+      display: block;
+    }
+    .seta-esq,
+    .seta-dir {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 40px;
+      color: white;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 10px 16px;
+      cursor: pointer;
+      border-radius: 4px;
+      user-select: none;
+      z-index: 1;
+    }
+    .seta-esq {
+      left: 10px;
+    }
+    .seta-dir {
+      right: 10px;
+    }
+    .chamada {
+      padding: 40px 20px;
+      background-color: #1b1b1b;
+      text-align: left;
+      max-width: 500px;
+      margin: auto;
+    }
+    .chamada p {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .chamada span {
+      display: block;
+      color: #aaa;
+      font-weight: normal;
+      margin-top: 5px;
+    }
+    .botao {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 8px 16px;
+      background: #00d1d1;
+      color: black;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    footer {
+      background: #151515;
+      color: white;
+      padding: 30px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    .footer-section {
+      margin-top: 10px;
+    }
+    .footer-section h4 {
+      margin-bottom: 5px;
+    }
+    .footer-section p {
+      margin: 4px 0;
+      color: #ccc;
+    }
+    .footer-section a {
+      background: red;
+      color: white;
+      padding: 5px 15px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 5px;
+    }
+    @media (max-width: 1020px) {
+      .carousel {
+        width: 95%;
+      }
+    }
+    @media (max-width: 600px) {
+      footer {
+        flex-direction: column;
+        gap: 20px;
+      }
+      nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+      }
+      .banner h1 {
+        font-size: 26px;
+      }
+      @font-face {
+        font-family: Cadson Demak;
+        src: url("./Mitr.zip");
+      }
+    }
